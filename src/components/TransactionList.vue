@@ -8,18 +8,11 @@
 </template>
 
 
-<script>
-export default {
-  setup() {
-    const transactions = [
-        { id: 1, text: 'Flower', amount: -19.99 },
-        { id: 2, text: 'Flower', amount: 19.99 },
-        { id: 3, text: 'Flower', amount: -19.99 },
-        { id: 4, text: 'Flower', amount: 19.99 },
-      ]
-    return {
-      transactions
-    };
-  },
-}
+<script setup>
+  const transactions = [
+      { id: 1, text: 'Flower', amount: -19.99 },
+      { id: 2, text: 'Flower', amount: 19.99 },
+      { id: 3, text: 'Flower', amount: -19.99 },
+      { id: 4, text: 'Flower', amount: 19.99 },
+    ]
 </script>
