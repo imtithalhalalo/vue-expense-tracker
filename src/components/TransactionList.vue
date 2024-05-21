@@ -7,12 +7,13 @@
       </ul>
 </template>
 
-
 <script setup>
-  const transactions = [
-      { id: 1, text: 'Flower', amount: -19.99 },
-      { id: 2, text: 'Flower', amount: 19.99 },
-      { id: 3, text: 'Flower', amount: -19.99 },
-      { id: 4, text: 'Flower', amount: 19.99 },
-    ]
+  import { defineProps } from 'vue';
+
+  const props = defineProps({
+    transactions: {
+      type: Array,
+      required: true
+    }
+  })
 </script>
